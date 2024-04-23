@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  transition: linear .2s;
+}
+ul {
+  list-style: none;
+}
+.card-wrapper {
+  display: grid;
+  place-items: center;
+}
+.card-body {
+  width: 300px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  background: rgb(108,30,220);
+  background: linear-gradient(151deg, rgba(108,30,220,1) 0%, rgba(227,112,252,1) 100%); 
+  color: #fff;
+}
+.profile-img img {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+.occupation {
+  font-size: 18px;
+}
+.profile-details {
+  margin: 15px 0;
+}
+.profile-details p {
+  margin-top: 10px;
+}
+.pone-email a {
+  color: #fff;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.pone-email a:hover {
+  color: #3a066e;
+}
+.social-contact {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+.social-contact li a {
+  height: 35px;
+  width: 35px;
+  background-color: #8b33e4;
+  display: inline-block;
+  line-height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+}
+.social-contact li a:hover {
+  background-color: #3a066e;
+}
+
+/* Form style */
+.profile-form-wrapper {
+  width: 350px;
+  margin: 30px auto;
+}
+.create-profile-btn {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  background-color: #7222de;
+  color: #fff;
+  display: block;
+  padding: 14px 30px;
+  border: 0;
+  margin: 20px 0;
+  border-radius: 3px;
+  font-size: 16px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.form {
+  background-color: #e26ffc;
+  padding: 30px;
+  display: none;
+}
+.form form p {
+  margin-bottom: 15px;
+}
+.form form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form form input,
+.form form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 12px;
+  border: 0;
+  border-radius: 3px;
+}

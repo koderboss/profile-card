@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Profile creator form -->
+  <div class="profile-form-wrapper">
+    <div class="create-profile-btn">
+      <button class="btn" id="add_user">Add new user</button>
+    </div>
+    <div class="form">
+      <form action="#" method="post" enctype="multipart/form-data">
+        <p>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Full name" required>
+        </p>
+        <p>
+          <label for="occupation">Occupation</label>
+          <input type="text" name="occupation" id="occupation" placeholder="Occupation" required>
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email">
+        </p>
+        <p>
+          <label for="phone">Phone</label>
+          <input type="text" name="phone" id="phone" placeholder="Phone number">
+        </p>
+        <p>
+          <label for="description">Description</label>
+          <textarea name="description" id="description" rows="2"></textarea>
+        </p>
+        <p>
+          <label for="facebook">Social Links</label>
+          <div class="social-inputs">
+            <input type="text" id="facebook" name="facebook" placeholder="facebook.com">
+            <input type="text" id="twitter" name="twitter" placeholder="twitter.com">
+            <input type="text" id="instagram" name="instagram" placeholder="instagram.com">
+            <input type="text" id="linkedin" name="linkedin" placeholder="linkedin.com">
+          </div>
+        </p>
+        <p>
+          <p><img id="preview_image" src="" alt="image" width="100"></p>
+          <input type="file" name="image" id="image" onchange="document.getElementById('preview_image').src = window.URL.createObjectURL(this.files[0])">
+        </p>
+        <p>
+          <input class="btn" type="submit" value="Create profile" id="submit">
+        </p>
+      </form>
+    </div>
+  </div>
+  <!-- Profile creator form end -->
+
+  <div class="card-wrapper">
+    <div class="card-body">
+      <div class="profile-img">
+        <img src="assets/imgs/images.jpg" alt="profile image">
+      </div>
+      <div class="profile-details">
+        <h2 class="name">Saidur Rahman</h2>
+        <h5 class="occupation">Occupation</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, eaque.</p>
+      </div>
+      <div class="contact-info">
+        <div class="pone-email">
+          <a href="tel:01234567890" class="phone"><i class="fa fa-phone"></i> +088 0123 456789</a>
+          <a href="mailto:example@gmail.com" class="email"><i class="fa fa-envelope"></i> example@gmail.com</a>
+        </div>
+        <ul class="social-contact">
+          <li><a href="" class="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="" class="twitter"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
